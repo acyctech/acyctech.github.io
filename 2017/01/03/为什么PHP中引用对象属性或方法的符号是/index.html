@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>有多少辛酸不可与人道 | 博客：迭代人生！</title>
+  <title>为什么PHP中引用对象属性或方法的符号是-&gt; | 博客：迭代人生！</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="看看走过的这三十多年，有多少遗憾，有多少辛酸，有多少不可与人道">
+  <meta name="description" content="作业在Java、Ruby等面向对象设计语言中，对于引用对象属性或方法的分量符号是句点。123456789101112//一段java对象属性引用代码public class Person&amp;#123;	public String name;		public Person(String name)&amp;#123;		this.name = name;	&amp;#125;	public static void">
 <meta property="og:type" content="article">
-<meta property="og:title" content="有多少辛酸不可与人道">
-<meta property="og:url" content="http://yoursite.com/2016/12/09/有多少辛酸不可与人道/index.html">
+<meta property="og:title" content="为什么PHP中引用对象属性或方法的符号是->">
+<meta property="og:url" content="http://yoursite.com/2017/01/03/为什么PHP中引用对象属性或方法的符号是/index.html">
 <meta property="og:site_name" content="博客：迭代人生！">
-<meta property="og:description" content="看看走过的这三十多年，有多少遗憾，有多少辛酸，有多少不可与人道">
-<meta property="og:updated_time" content="2016-12-09T08:37:31.991Z">
+<meta property="og:description" content="作业在Java、Ruby等面向对象设计语言中，对于引用对象属性或方法的分量符号是句点。123456789101112//一段java对象属性引用代码public class Person&amp;#123;	public String name;		public Person(String name)&amp;#123;		this.name = name;	&amp;#125;	public static void">
+<meta property="og:updated_time" content="2017-01-03T16:01:02.033Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="有多少辛酸不可与人道">
-<meta name="twitter:description" content="看看走过的这三十多年，有多少遗憾，有多少辛酸，有多少不可与人道">
+<meta name="twitter:title" content="为什么PHP中引用对象属性或方法的符号是->">
+<meta name="twitter:description" content="作业在Java、Ruby等面向对象设计语言中，对于引用对象属性或方法的分量符号是句点。123456789101112//一段java对象属性引用代码public class Person&amp;#123;	public String name;		public Person(String name)&amp;#123;		this.name = name;	&amp;#125;	public static void">
   
     <link rel="alternate" href="/atom.xml" title="博客：迭代人生！" type="application/atom+xml">
   
@@ -67,10 +67,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-有多少辛酸不可与人道" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-为什么PHP中引用对象属性或方法的符号是" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/12/09/有多少辛酸不可与人道/" class="article-date">
-  <time datetime="2016-12-09T08:31:48.000Z" itemprop="datePublished">2016-12-09</time>
+    <a href="/2017/01/03/为什么PHP中引用对象属性或方法的符号是/" class="article-date">
+  <time datetime="2017-01-03T15:47:22.000Z" itemprop="datePublished">2017-01-03</time>
 </a>
     
   </div>
@@ -81,7 +81,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      有多少辛酸不可与人道
+      为什么PHP中引用对象属性或方法的符号是-&gt;
     </h1>
   
 
@@ -89,12 +89,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>看看走过的这三十多年，有多少遗憾，有多少辛酸，有多少不可与人道</p>
+        <blockquote>
+<p>作业<br>在Java、Ruby等面向对象设计语言中，对于引用对象属性或方法的分量符号是句点。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">//一段java对象属性引用代码</div><div class="line">public class Person&#123;</div><div class="line">	public String name;</div><div class="line">	</div><div class="line">	public Person(String name)&#123;</div><div class="line">		this.name = name;</div><div class="line">	&#125;</div><div class="line">	public static void main(String[] args)&#123;</div><div class="line">		Person person = new Person(&quot;小明&quot;);</div><div class="line">		System.out.println(person.name); //对象person属性的引用，使用句点</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+</blockquote>
+<p>而在PHP中使用的确是-&gt;（一个减号加一个大于号）这样一个工作量提高了1倍的方案，那这是为什么呢？</p>
+<hr>
+<p>大胆猜测一下，PHP在1994年最初设计的时候，估计还是面向过程的设计方法论占据上风。那个时候，它已经使用了句点做为字符串连接符使用了。所以后来PHP也向面向对象发展的时候，只好用另一种符号来代替了。而单独的符号基本上已经被使用完毕了，那只好使用双符组合，就形成了今天的用法。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/09/有多少辛酸不可与人道/" data-id="cixhpcjzq000498k27l53ujl3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/01/03/为什么PHP中引用对象属性或方法的符号是/" data-id="cixhpcjzn000398k2rz677tpg" class="article-share-link">Share</a>
       
       
     </footer>
@@ -103,19 +108,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/01/01/2017年寄语/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          2017年寄语
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/12/09/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/01/03/2017-1-2-习惯养成很重要/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title">2017.1.2:习惯养成很重要</div>
     </a>
   
 </nav>

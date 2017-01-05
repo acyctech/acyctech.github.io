@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>聊聊函数与方法的区别 | 博客：迭代人生！</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1.java中的方法与函数在Java中，方法代表对象的行为，可以分为对象方法（或叫成员方法）和类方法（或叫静态方法）。所谓对象方法，是指方法的调用需要依赖具体的对象；所谓类方法，是指方法的调用不依赖具体的对象，直接使用类名就可完成调用。当然，对象方法和类方法的定义也有区别。
+123456789101112131415161718192021222324252627282930public clas">
+<meta property="og:type" content="article">
+<meta property="og:title" content="聊聊函数与方法的区别">
+<meta property="og:url" content="http://yoursite.com/2017/01/05/聊聊函数与方法的区别/index.html">
+<meta property="og:site_name" content="博客：迭代人生！">
+<meta property="og:description" content="1.java中的方法与函数在Java中，方法代表对象的行为，可以分为对象方法（或叫成员方法）和类方法（或叫静态方法）。所谓对象方法，是指方法的调用需要依赖具体的对象；所谓类方法，是指方法的调用不依赖具体的对象，直接使用类名就可完成调用。当然，对象方法和类方法的定义也有区别。
+123456789101112131415161718192021222324252627282930public clas">
+<meta property="og:updated_time" content="2017-01-05T16:26:09.840Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="聊聊函数与方法的区别">
+<meta name="twitter:description" content="1.java中的方法与函数在Java中，方法代表对象的行为，可以分为对象方法（或叫成员方法）和类方法（或叫静态方法）。所谓对象方法，是指方法的调用需要依赖具体的对象；所谓类方法，是指方法的调用不依赖具体的对象，直接使用类名就可完成调用。当然，对象方法和类方法的定义也有区别。
+123456789101112131415161718192021222324252627282930public clas">
+  
+    <link rel="alternate" href="/atom.xml" title="博客：迭代人生！" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">博客：迭代人生！</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">生活一半记忆，一半继续</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-聊聊函数与方法的区别" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/01/05/聊聊函数与方法的区别/" class="article-date">
+  <time datetime="2017-01-05T03:01:00.000Z" itemprop="datePublished">2017-01-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      聊聊函数与方法的区别
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-java中的方法与函数"><a href="#1-java中的方法与函数" class="headerlink" title="1.java中的方法与函数"></a>1.java中的方法与函数</h2><p>在Java中，方法代表对象的行为，可以分为对象方法（或叫成员方法）和类方法（或叫静态方法）。所谓对象方法，是指方法的调用需要依赖具体的对象；所谓类方法，是指方法的调用不依赖具体的对象，直接使用类名就可完成调用。当然，对象方法和类方法的定义也有区别。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">public class YellowPerson&#123;</div><div class="line">	private String name;</div><div class="line">	private int age;</div><div class="line"></div><div class="line">	public YellowPerson(String name,int age)&#123;</div><div class="line">		this.name = name;</div><div class="line">		this.age = age;</div><div class="line">	&#125;</div><div class="line">	//对象方法的定义</div><div class="line">	public int getAge()&#123;</div><div class="line">    	return this.age;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public String getName()&#123;</div><div class="line">    	return this.name;</div><div class="line">    &#125;</div><div class="line">    //类方法的定义</div><div class="line">    public static String getSkinColor()&#123;</div><div class="line">    	return &quot;yellow&quot;;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public static void main(String[] args)&#123;</div><div class="line">    	YellowPerson smallBoy = new YellowPerson(&quot;小明&quot;,15);</div><div class="line">		//成员方法的引用</div><div class="line">    	System.out.print(&quot;smallBoy名字叫&quot; + smallBoy.getName());</div><div class="line">        System.out.print(&quot;,他的年龄是&quot; + smallBoy.getAge());</div><div class="line">        //类方法的引用</div><div class="line">        System.out.print(&quot;,他的肤色是&quot; + YellowPerson.getSkinColor());</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Java中一般不提函数，在c语言中，函数也是用来完成特定的功能或说产生一定的行为，但c中没有对象的概念，它是面向过程的。java中提到函数，指的也是方法。</p>
+<h2 id="2-PHP中的方法与函数"><a href="#2-PHP中的方法与函数" class="headerlink" title="2.PHP中的方法与函数"></a>2.PHP中的方法与函数</h2><p>在PHPH中，用来完成特定功能的代码块，有三种类型，分别是全局函数、类静态函数和对象方法，或称为函数、类方法和对象方法。函数的调用不依赖具体的对象，类方法的调用也不依赖具体的对象，对象方法的调用需要依赖具体的对象。当然他们的定义也是有区别的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line"></div><div class="line">class yellow_person&#123;</div><div class="line">	public $name;</div><div class="line">	public $age;</div><div class="line">	//构造函数</div><div class="line">	function __construct($name,$age)&#123;</div><div class="line">		$this-&gt;name = $name;</div><div class="line">		$this-&gt;age = $age;</div><div class="line">	&#125;</div><div class="line">	//对象方法</div><div class="line">	function get_name($name = NULL)&#123;</div><div class="line">		return $this-&gt;name;</div><div class="line">    &#125;</div><div class="line">    function get_age($age = null)&#123;</div><div class="line">		return $this-&gt;age;</div><div class="line">    &#125;</div><div class="line">    //静态方法</div><div class="line">	static function get_skin_color()&#123;</div><div class="line">        return &quot;yellow&quot;;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">	//函数</div><div class="line">function talk_language($language)&#123;</div><div class="line">	return $language;</div><div class="line">&#125;</div><div class="line">$smallBoy = new yellow_person(&quot;小明&quot;,15);</div><div class="line">//方法调用</div><div class="line">print(&quot;smallBoey的名字叫&quot;.$smallBoy-&gt;get_name());</div><div class="line">print(&quot;,他的年龄是&quot;.$smallBoy-&gt;get_age());</div><div class="line">//类方法调用</div><div class="line">print(&quot;,他的肤色是&quot;.yellow_person::get_skin_color());</div><div class="line">//函数调用</div><div class="line">print(&quot;,他会说的语言是&quot;.talk_language(&quot;汉语&quot;));</div><div class="line">?&gt;</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/01/05/聊聊函数与方法的区别/" data-id="cixkl4w0w0006x8k2b5z08nks" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/01/05/2017-1-4作业/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">2017.1.4作业</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/01/05/聊聊函数与方法的区别/">聊聊函数与方法的区别</a>
+          </li>
+        
+          <li>
+            <a href="/2017/01/05/2017-1-4作业/">2017.1.4作业</a>
+          </li>
+        
+          <li>
+            <a href="/2017/01/03/为什么PHP中引用对象属性或方法的符号是/">为什么PHP中引用对象属性或方法的符号是-&gt;</a>
+          </li>
+        
+          <li>
+            <a href="/2017/01/03/2017-1-2-习惯养成很重要/">2017.1.2:习惯养成很重要</a>
+          </li>
+        
+          <li>
+            <a href="/2017/01/01/2017年寄语/">2017年寄语</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 acyctech<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
